@@ -1,0 +1,43 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // "editor.fontFamily": "'DejaVu Sans Mono for Powerline'",
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    // Controls the font size.
+    "editor.fontSize": 22,
+    "editor.renderIndentGuides": true,
+    // Columns at which to show vertical rulers
+    "editor.rulers": [
+        100
+    ],
+    // Arguments passed in. Each argument is a separate item in the array.
+    "python.formatting.autopep8Args": [
+        "--max-line-length=100",
+        "--indent-size=2"
+    ],
+    // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+    "editor.formatOnSave": true,
+    // Format the document upon saving.
+    "python.formatting.formatOnSave": true,
+    "python.linting.pylintArgs": [
+        "--include-naming-hint=n",
+        "--disable=W0311",
+        "--disable=C0103",
+        "--disable=E1101"
+    ],
+    "files.trimTrailingWhitespace": true,
+    // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+    "editor.tabSize": 2,
+    "files.exclude": {
+        ".vs*": true,
+        "*.*~": true,
+        "*.pyc": true,
+        "*/*.pyc": true
+    },
+    "files.autoSave": "onWindowChange",
+    "git.confirmSync": false,
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 120,
+    "workbench.welcome.enabled": false
+}
