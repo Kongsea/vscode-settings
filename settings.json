@@ -7,6 +7,7 @@
     "editor.fontSize": 22,
     "editor.renderIndentGuides": true,
     "editor.occurrencesHighlight": true,
+    "editor.renderWhitespace": "boundary",
     // Columns at which to show vertical rulers
     "editor.rulers": [
         100
