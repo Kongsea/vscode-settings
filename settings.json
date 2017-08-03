@@ -1,10 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
-    // "editor.fontFamily": "'DejaVu Sans Mono for Powerline'",
-    "editor.fontFamily": "'Fira Code'",
+    "editor.fontFamily": "'Fira Code', 'DejaVu Sans Mono for Powerline'",
     "editor.fontLigatures": true,
     // Controls the font size.
-    "editor.fontSize": 22,
+    "editor.fontSize": 18,
     "editor.renderIndentGuides": true,
     "editor.occurrencesHighlight": true,
     "editor.renderWhitespace": "boundary",
@@ -48,7 +47,7 @@
     "git.confirmSync": false,
     "window.zoomLevel": 0,
     "editor.minimap.enabled": true,
-    "editor.minimap.maxColumn": 120,
+    "editor.minimap.maxColumn": 100,
     "workbench.welcome.enabled": false,
     "workbench.iconTheme": "vs-nomo-dark",
     "workbench.colorTheme": "Monokai"
