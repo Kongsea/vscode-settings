@@ -47,9 +47,9 @@ My user settings of VSCode
 
 10. Set minimap.
 
-   "editor.minimap.enabled"
+    "editor.minimap.enabled"
 
-   "editor.minimap.maxColumn"
+    "editor.minimap.maxColumn"
 
 ## python.json
 My user snippets for Python.
