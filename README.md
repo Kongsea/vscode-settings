@@ -52,14 +52,30 @@ My user settings of VSCode
     "editor.minimap.maxColumn"
 
 ## python.json
-My user snippets for Python.
+My user snippets for Python using Python extension by Don Jayamanne.
 
-path: ~/.config/Code/User/snippets/python.json
+File path: ~/.vscode/extensions/donjayamanne.python-***/snippets/python.json
 
 1. pc
 
    Python path and coding format.
 
-2. ds
+2. pc3
+
+   Python 3 path and coding format.
+
+3. ds
 
    Document string and author information.
+
+4. ff
+
+   from __future__ import ...
+
+5. itf
+
+   import tensorflow as tf
+
+6. ifm
+
+   Create a main function structure.
