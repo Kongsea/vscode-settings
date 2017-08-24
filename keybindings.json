@@ -1,0 +1,42 @@
+// File -> Preferences -> Keyboard Shortcuts [Ctrl+K Ctrl+S]
+// to open Keyboard Shortcuts editor and
+// click on the link keybindings.json to open and edit it.
+[
+  {
+    "key": "ctrl+F11",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+F12",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "F4",
+    "command": "workbench.debug.action.toggleRepl"
+  },
+  {
+    "key": "alt+delete",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  }
+]

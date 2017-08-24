@@ -79,3 +79,44 @@ File path: ~/.vscode/extensions/donjayamanne.python-***/snippets/python.json
 6. ifm
 
    Create a main function structure.
+
+## keybindings.json
+My key bindings.
+
+File path: ~/.config/Code/User/keybindings.json
+
+1. Back and forward
+
+   Ctrl + F11 or Ctrl + F12
+
+2. Toggle output
+
+   F4
+
+3. Delete current line
+
+   Alt + Delete (not disturb the copyboard) or Ctrl + X (disturb the copyboard)
+
+4. Cut current line
+
+   Shift + Delete or Ctrl + X
+
+5. Copy current line
+
+   Ctrl + C
+
+6. Move current line down
+
+   Alt + Down
+
+7. Move current line up
+
+   Alt + Up
+
+8. Copy current line down
+
+   Shift + Alt + Down
+
+9. Copy current line up
+
+   Shift + Alt + Up
