@@ -38,6 +38,34 @@
     ],
     "description": "from __future__ import ..."
   },
+  "inmp": {
+    "prefix": "inmp",
+    "body": [
+      "import numpy as np\n$0"
+    ],
+    "description": "import numpy as np"
+  },
+  "inm": {
+    "prefix": "inm",
+    "body": [
+      "import numpy as np\n$0"
+    ],
+    "description": "import numpy as np"
+  },
+  "icp": {
+    "prefix": "icp",
+    "body": [
+      "import cPickle as pickle\n$0"
+    ],
+    "description": "import cPickle as pickle"
+  },
+  "impp": {
+    "prefix": "impp",
+    "body": [
+      "import matplotlib.pyplot as plt\n$0"
+    ],
+    "description": "import matplotlib.pyplot as plt"
+  },
   "itf": {
     "prefix": "itf",
     "body": [
