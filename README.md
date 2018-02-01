@@ -133,3 +133,15 @@ File path: ~/.config/Code/User/keybindings.json
 9. Copy current line up
 
    Shift + Alt + Up
+
+## Some errors
+
+1. Formatter autopep8 is not installed.
+
+   Although autopep8 has been installed, vscode will give this error sometimes.
+   
+   How to fix:
+   
+     Install autopep8 using the Ubuntu package (not using pip as VSCode tries to do):
+
+     `sudo apt-get install python-autopep8`
