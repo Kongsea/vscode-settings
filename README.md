@@ -1,5 +1,11 @@
 # VSCode settings
 
+## Extensions
+
+- Python by Microsoft
+- vscode-fileheader : Ctrl + Alt + I to insert a header.
+- Nomo Dark Icon Theme
+
 ## settings.json
 My user settings of VSCode
 
@@ -54,7 +60,7 @@ My user settings of VSCode
 ## python.json
 My user snippets for Python using Python extension by Don Jayamanne.
 
-File path: ~/.vscode/extensions/donjayamanne.python-***/snippets/python.json
+File path: ~/.vscode/extensions/ms-python.python-***/snippets/python.json
 
 1. pc
 
@@ -139,9 +145,9 @@ File path: ~/.config/Code/User/keybindings.json
 1. Formatter autopep8 is not installed.
 
    Although autopep8 has been installed, vscode will give this error sometimes.
-   
+
    How to fix:
-   
+
      Install autopep8 using the Ubuntu package (not using pip as VSCode tries to do):
 
      `sudo apt-get install python-autopep8`

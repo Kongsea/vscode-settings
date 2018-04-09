@@ -1,14 +1,15 @@
-// Place your settings in this file to overwrite the default settings
 {
     "editor.fontFamily": "'Fira Code', 'DejaVu Sans Mono for Powerline'",
     "editor.fontLigatures": true,
     // Controls the font size.
     "editor.fontSize": 18,
+    "markdown.preview.fontSize": 18,
     "editor.renderIndentGuides": true,
     "editor.occurrencesHighlight": true,
     "editor.renderWhitespace": "boundary",
     // Columns at which to show vertical rulers
     "editor.rulers": [
+        80,
         100
     ],
     "workbench.colorCustomizations": {
@@ -26,13 +27,20 @@
     "editor.acceptSuggestionOnEnter": "on",
     // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
     "editor.formatOnSave": true,
-    // Format the document upon saving.
-    "python.formatting.formatOnSave": true,
     "python.linting.pylintArgs": [
         "--include-naming-hint=n",
         "--disable=W0311",
+        "--disable=W0621",
+        "--disable=W0703",
+        "--disable=W1202",
         "--disable=C0103",
-        "--disable=E1101"
+        "--disable=C0301",
+        "--disable=C0325",
+        "--disable=C0111",
+        "--disable=E1101",
+        "--disable=E1129",
+        "--disable=R0913",
+        "--disable=R0914"
     ],
     "files.trimTrailingWhitespace": true,
     // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
@@ -41,7 +49,36 @@
         ".vs*": true,
         "*.*~": true,
         "*.pyc": true,
-        "*/*.pyc": true
+        "*/*.pyc": true,
+        "*/*/*.pyc": true,
+        "launch.json": true
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "stopOnEntry": true,
+                "cwd": "${workspaceFolder}",
+                "debugOptions": [
+                    "RedirectOutput"
+                ],
+                // "args": [
+                //   "layer",
+                //   "1"
+                // ],
+                // "env": {
+                //     "PYTHONPATH": "~/caffe2/build:~/caffe2"
+                // },
+                // "envFile": "${workspaceFolder}/.env",
+                // "pythonPath": "/usr/bin/python",
+                "pythonPath": "${config:python.pythonPath}",
+                "console": "none"
+            },
+        ]
     },
     "files.autoSave": "onWindowChange",
     "git.confirmSync": false,
@@ -50,5 +87,8 @@
     "editor.minimap.maxColumn": 100,
     "workbench.iconTheme": "vs-nomo-dark",
     "workbench.colorTheme": "Monokai",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "extensions.ignoreRecommendations": true,
+    "fileheader.Author": "Author",
+    "fileheader.tpl": "# !/usr/bin/env python\r\n# -*- coding: utf-8 -*-\r\n'''\r\n   @Author: {author} \r\n   @Date: {createTime} \r\n'''\r\nfrom __future__ import absolute_import, division, print_function\r\n\r\nimport os\r\nimport sys\r\n\r\n"
 }
