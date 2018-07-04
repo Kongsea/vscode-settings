@@ -2,11 +2,11 @@
 
 ## Extensions
 
-- Python by Microsoft
-- vscode-fileheader : Ctrl + Alt + I to insert a header.
-- Nomo Dark Icon Theme
+- [Python by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [vscode-fileheader](https://marketplace.visualstudio.com/items?itemName=mikey.vscode-fileheader): Ctrl + Alt + I to insert a header.
+- [Nomo Dark Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-dark)
 
-## settings.json
+## [settings.json](./settings.json)
 My user settings of VSCode
 
 1. Fonts: name and size.
@@ -57,7 +57,7 @@ My user settings of VSCode
 
     "editor.minimap.maxColumn"
 
-## python.json
+## [python.json](./python.json)
 My user snippets for Python using Python extension by Don Jayamanne.
 
 File path: ~/.vscode/extensions/ms-python.python-***/snippets/python.json
@@ -76,29 +76,29 @@ File path: ~/.vscode/extensions/ms-python.python-***/snippets/python.json
 
 4. ff
 
-   from __future__ import ...
+   `from __future__ import ...`
 
 5. inmp or inm
 
-   import numpy as np
+   `import numpy as np`
 
 6. icp
 
-   import cPickle as pickle
+   `import cPickle as pickle`
 
 7. impp
 
-   import matplotlib.pyplot as plt
+   `import matplotlib.pyplot as plt`
 
 8. itf
 
-   import tensorflow as tf
+   `import tensorflow as tf`
 
 9. ifm
 
    Create a main function structure.
 
-## keybindings.json
+## [keybindings.json](./keybindings.json)
 My key bindings of VSCode.
 
 File path: ~/.config/Code/User/keybindings.json
@@ -141,7 +141,6 @@ File path: ~/.config/Code/User/keybindings.json
    Shift + Alt + Up
 
 ## Some errors
-
 1. Formatter autopep8 is not installed.
 
    Although autopep8 has been installed, vscode will give this error sometimes.
@@ -151,3 +150,6 @@ File path: ~/.config/Code/User/keybindings.json
      Install autopep8 using the Ubuntu package (not using pip as VSCode tries to do):
 
      `sudo apt-get install python-autopep8`
+
+## Usage tips
+[Record some usage tips using vscode.](./usage_tips.md)
