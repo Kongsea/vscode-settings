@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Fira Code', 'DejaVu Sans Mono for Powerline'",
+    "editor.fontFamily": "'Fira Code Light', 'DejaVu Sans Mono for Powerline'",
     "editor.fontLigatures": true,
     // Controls the font size.
     "editor.fontSize": 18,
@@ -9,8 +9,8 @@
     "editor.renderWhitespace": "boundary",
     // Columns at which to show vertical rulers
     "editor.rulers": [
-        80,
-        100
+        120,
+        160
     ],
     "workbench.colorCustomizations": {
         "editor.lineHighlightBorder": "#ADD6FF18",
@@ -21,14 +21,15 @@
     },
     // Arguments passed in. Each argument is a separate item in the array.
     "python.formatting.autopep8Args": [
-        "--max-line-length=100",
-        "--indent-size=2"
+        "--ignore",
+        "E402",
+        "--max-line-length=180",
+        "--indent-size=4"
     ],
     "editor.acceptSuggestionOnEnter": "on",
-    // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
-    "editor.formatOnSave": true,
     "python.linting.pylintArgs": [
         "--include-naming-hint=n",
+        "--extension-pkg-whitelist=cv2",
         "--disable=W0311",
         "--disable=W0621",
         "--disable=W0703",
@@ -43,15 +44,20 @@
         "--disable=R0914"
     ],
     "files.trimTrailingWhitespace": true,
-    // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
-    "editor.tabSize": 2,
     "files.exclude": {
         ".vs*": true,
         "*.*~": true,
+        "*.jpg": true,
         "*.pyc": true,
         "*/*.pyc": true,
         "*/*/*.pyc": true,
         "launch.json": true
+    },
+    "files.watcherExclude": {
+        "*.jpg": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
     },
     "launch": {
         "version": "0.2.0",
@@ -63,32 +69,75 @@
                 "program": "${file}",
                 "stopOnEntry": true,
                 "cwd": "${workspaceFolder}",
-                "debugOptions": [
-                    "RedirectOutput"
-                ],
-                // "args": [
-                //   "layer",
-                //   "1"
-                // ],
-                // "env": {
-                //     "PYTHONPATH": "~/caffe2/build:~/caffe2"
-                // },
-                // "envFile": "${workspaceFolder}/.env",
-                // "pythonPath": "/usr/bin/python",
                 "pythonPath": "${config:python.pythonPath}",
                 "console": "none"
             },
         ]
     },
+    "indentRainbow.colors": [
+        "rgba(232,245,253,0.2)",
+        "rgba(155,209,242,0.2)",
+        "rgba(140,189,232,0.2)",
+        "rgba(90,158,179,0.2)"
+    ],
+    "indentRainbow.indentSetter": {
+        "python": {
+            "tabSize": 4,
+            "insertSpaces": true
+        }
+    },
+    "indentRainbow.errorColor": "rgba(67,126,170,0.2)",
     "files.autoSave": "onWindowChange",
     "git.confirmSync": false,
     "window.zoomLevel": 0,
     "editor.minimap.enabled": true,
-    "editor.minimap.maxColumn": 100,
+    "editor.minimap.maxColumn": 180,
     "workbench.iconTheme": "vs-nomo-dark",
     "workbench.colorTheme": "Monokai",
     "workbench.startupEditor": "none",
     "extensions.ignoreRecommendations": true,
-    "fileheader.Author": "Author",
-    "fileheader.tpl": "# !/usr/bin/env python\r\n# -*- coding: utf-8 -*-\r\n'''\r\n   @Author: {author} \r\n   @Date: {createTime} \r\n'''\r\nfrom __future__ import absolute_import, division, print_function\r\n\r\nimport os\r\nimport sys\r\n\r\n"
+    "fileheader.Author": "Kong Haiyang",
+    "fileheader.tpl": "# -*- coding: utf-8 -*-\r\n'''\r\n   @Author: {author} \r\n   @Date: {createTime} \r\n'''\r\nfrom __future__ import absolute_import, division, print_function\r\n\r\nimport os\r\n\r\n",
+    "python.venvPath": "/home/kong/anaconda/envs",
+    "explorer.confirmDelete": false,
+    "leetcode.defaultLanguage": "python",
+    "leetcode.endpoint": "leetcode-cn",
+    "editor.overviewRulerLanes": 4,
+    "editor.wordWrap": "on",
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        }
+    ],
+    "remote.SSH.showLoginTerminal": true,
+    "editor.formatOnSave": true,
+    "editor.wordWrapColumn": 180,
+    "terminal.integrated.inheritEnv": false
 }
